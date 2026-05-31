@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Day Planners — Modern Tamil Cultural Event Management</title>
+  <meta name="description"
+    content="Dream Day Planners — Premier Tamil cultural event management. Weddings, puberty ceremonies, ear-piercing, corporate events crafted with tradition and luxury." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Floating Emojis / Cultural Symbols -->
+  <div class="floating-symbols" id="floatingSymbols"></div>
+
+  <!-- ======================== NAVBAR ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-lamp">🪔</span>
+      <span class="logo-text">Dream Day <span class="gold">Planners</span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#experts">Experts</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-cta" id="navCta">
+      Book Now
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- ======================== HERO ======================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <img class="hero-img" src="./images/image.png" alt="Tamil Cultural Celebration" />
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">✦ Always Special ✦</div>
+      <h1 class="hero-title reveal-up">
+        <span class="title-line">நம் கலாசாரம்</span>
+        <span class="title-line title-english">Our Culture, Your Celebration</span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        Premium Tamil Cultural Event Management — Weddings · Ceremonies · Corporate Galas
+      </p>
+      <div class="hero-btns reveal-up">
+        <a href="#packages" class="btn btn-gold">
+          <span>Explore Packages</span>
+          <svg viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#gallery" class="btn btn-outline">View Gallery</a>
+      </div>
+      <!-- Floating cultural icons row -->
+      <div class="hero-icons reveal-up">
+        <span class="h-icon" title="Kuthu Vilakku">🪔</span>
+        <span class="h-icon" title="Flowers">🌸</span>
+        <span class="h-icon" title="Music">🎺</span>
+        <span class="h-icon" title="Feast">🍛</span>
+        <span class="h-icon" title="Celebration">🎊</span>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ======================== MARQUEE ======================== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>🪔 Weddings</span><span>✦</span>
+      <span>🌺 Naamkaran</span><span>✦</span>
+      <span>🎊 Baby Shower</span><span>✦</span>
+      <span>🎵 Sangeet Night</span><span>✦</span>
+      <span>🏛️ Corporate Events</span><span>✦</span>
+      <span>🌸 Ear Piercing</span><span>✦</span>
+      <span>💫 Puberty Ceremony</span><span>✦</span>
+      <span>🎉 Birthdays</span><span>✦</span>
+      <span>🪔 Weddings</span><span>✦</span>
+      <span>🌺 Naamkaran</span><span>✦</span>
+      <span>🎊 Baby Shower</span><span>✦</span>
+      <span>🎵 Sangeet Night</span><span>✦</span>
+      <span>🏛️ Corporate Events</span><span>✦</span>
+      <span>🌸 Ear Piercing</span><span>✦</span>
+      <span>💫 Puberty Ceremony</span><span>✦</span>
+      <span>🎉 Birthdays</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- ======================== EVENTS SECTION ======================== -->
+  <section class="events-section" id="events">
+    <div class="section-header reveal-up">
+      <div class="section-tag">✦ What We Do ✦</div>
+      <h2 class="section-title">Events We <span class="gold">Craft</span></h2>
+      <p class="section-sub">Every celebration is a masterpiece woven with tradition and elegance.</p>
+    </div>
+
+    <div class="events-grid">
+      <div class="event-card reveal-card" data-delay="0">
+        <div class="event-card-inner">
+          <div class="event-icon">💍</div>
+          <h3>Tamil Weddings</h3>
+          <p>Grand tirumanam ceremonies with authentic rituals, floral mandapams, Nadaswaram music, and royal feast
+            arrangements.</p>
+          <span class="event-tag">Signature</span>
+        </div>
+        <div class="event-glow"></div>
+      </div>
+      <div class="event-card reveal-card" data-delay="100">
+        <div class="event-card-inner">
+          <div class="event-icon">🌺</div>
+          <h3>Puberty Ceremony</h3>
+          <p>Traditional valakappu and manjal ceremonies with cultural grace, creating lifelong memories for your
+            family.</p>
+          <span class="event-tag">Cultural</span>
+        </div>
+        <div class="event-glow"></div>
+      </div>
+      <div class="event-card reveal-card" data-delay="200">
+        <div class="event-card-inner">
+          <div class="event-icon">👂</div>
+          <h3>Ear Piercing</h3>
+          <p>Karna Vedha rituals performed with devotion, beautiful decorations, and traditional music in an auspicious
+            setting.</p>
+          <span class="event-tag">Ritual</span>
+        </div>
+        <div class="event-glow"></div>
+      </div>
+      <div class="event-card reveal-card" data-delay="300">
+        <div class="event-card-inner">
+          <div class="event-icon">🏛️</div>
+          <h3>Corporate Galas</h3>
+          <p>Fusion of modern professionalism with Tamil cultural aesthetics — unforgettable corporate celebrations and
+            award nights.</p>
+          <span class="event-tag">Corporate</span>
+        </div>
+        <div class="event-glow"></div>
+      </div>
+      <div class="event-card reveal-card" data-delay="400">
+        <div class="event-card-inner">
+          <div class="event-icon">🎂</div>
+          <h3>Birthday Bashes</h3>
+          <p>Milestone birthdays transformed into grand tamil cultural fiestas with vibrant decor and gourmet feast
+            spreads.</p>
+          <span class="event-tag">Celebrate</span>
+        </div>
+        <div class="event-glow"></div>
+      </div>
+      <div class="event-card reveal-card" data-delay="500">
+        <div class="event-card-inner">
+          <div class="event-icon">🎊</div>
+          <h3>Baby Showers</h3>
+          <p>Valakappu ceremonies adorned with jasmine, marigold and traditional music welcoming the little one with
+            blessings.</p>
+          <span class="event-tag">Blessed</span>
+        </div>
+        <div class="event-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== GALLERY CAROUSEL ======================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-header reveal-up">
+      <div class="section-tag">✦ Visual Stories ✦</div>
+      <h2 class="section-title">Our <span class="gold">Gallery</span></h2>
+      <p class="section-sub">Moments frozen in time — beauty, tradition, and joy.</p>
+    </div>
+
+    <div class="carousel-wrapper">
+      <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">&#8592;</button>
+      <div class="carousel-track-outer" id="carouselOuter">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide">
+            <img src="./images/works/ffff.jpg" alt="Tamil Cultural Celebration" />
+            <div class="slide-caption">
+              <span>Grand Tamil Celebrations</span>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="./images/works/mmm.jpg" alt="Cultural Icons" />
+            <div class="slide-caption">
+              <span>Sacred Cultural Traditions</span>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="./images/works/weddd.jpg" alt="Luxury Event" />
+            <div class="slide-caption">
+              <span>Luxury Wedding Mandapam</span>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="./images/works/wwww.jpg" alt="Premium Event" />
+            <div class="slide-caption">
+              <span>Premium Cultural Stage</span>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="./images/works/cgg.jpg" alt="Community Event" />
+            <div class="slide-caption">
+              <span>Community Gatherings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next">&#8594;</button>
+    </div>
+
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- ======================== STATS ======================== -->
+  <section class="stats-section">
+    <div class="stats-grid">
+      <div class="stat-card reveal-card" data-delay="0">
+        <div class="stat-num" data-target="20">0</div>
+        <div class="stat-plus">+</div>
+        <div class="stat-label">Events Hosted</div>
+      </div>
+      <div class="stat-card reveal-card" data-delay="200">
+        <div class="stat-num" data-target="50">0</div>
+        <div class="stat-plus">+</div>
+        <div class="stat-label">Expert Team</div>
+      </div>
+      <div class="stat-card reveal-card" data-delay="300">
+        <div class="stat-num" data-target="99">0</div>
+        <div class="stat-plus">%</div>
+        <div class="stat-label">Happy Families</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== PACKAGES ======================== -->
+  <section class="packages-section" id="packages">
+    <div class="section-header reveal-up">
+      <div class="section-tag">✦ Choose Your Celebration ✦</div>
+      <h2 class="section-title">Our <span class="gold">Packages</span></h2>
+      <p class="section-sub">Curated experiences for every dream and every budget.</p>
+    </div>
+
+    <div class="packages-grid">
+
+      <!-- LUXURY -->
+      <div class="pkg-card pkg-luxury reveal-card" data-delay="0">
+        <div class="pkg-ribbon">Most Opulent</div>
+        <div class="pkg-header">
+          <div class="pkg-icon">👑</div>
+          <h3 class="pkg-name">Luxury</h3>
+          <div class="pkg-tagline">The Royal Tamil Experience</div>
+          <div class="pkg-price">
+            <span class="price-from">Starting from</span>
+            <span class="price-amount">₹5,00,000</span>
+          </div>
+        </div>
+        <div class="pkg-img-wrap">
+          <img
+            src="/Users/subash-17785-test/.gemini/antigravity-ide/brain/3d7e13a7-d8a8-4788-aead-4804e3eddefa/luxury_event_package_1779535740710.png"
+            alt="Luxury Package" />
+          <div class="pkg-img-overlay"></div>
+        </div>
+        <ul class="pkg-features">
+          <li><span class="chk">✦</span> Grand Temple-Inspired Mandapam</li>
+          <li><span class="chk">✦</span> Crystal Chandelier Lighting</li>
+          <li><span class="chk">✦</span> 10,000+ Flower Arrangements</li>
+          <li><span class="chk">✦</span> Royal Banana Leaf Feast (500 guests)</li>
+          <li><span class="chk">✦</span> Live Nadaswaram + Melam Troupe</li>
+          <li><span class="chk">✦</span> Cinematic Photography + Drone</li>
+          <li><span class="chk">✦</span> Bridal Suite + Makeup Artist</li>
+          <li><span class="chk">✦</span> Gold-plated Invitation Cards</li>
+          <li><span class="chk">✦</span> 24/7 Dedicated Concierge</li>
+          <li><span class="chk">✦</span> Custom Cultural Choreography</li>
+        </ul>
+        <button class="pkg-btn pkg-btn-luxury" id="luxuryBookBtn">Book Luxury ✦</button>
+        <div class="pkg-glow luxury-glow"></div>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="pkg-card pkg-premium reveal-card" data-delay="150">
+        <div class="pkg-ribbon premium-ribbon">Best Value</div>
+        <div class="pkg-header">
+          <div class="pkg-icon">💎</div>
+          <h3 class="pkg-name">Premium</h3>
+          <div class="pkg-tagline">Elegance Without Compromise</div>
+          <div class="pkg-price">
+            <span class="price-from">Starting from</span>
+            <span class="price-amount">₹2,00,000</span>
+          </div>
+        </div>
+        <div class="pkg-img-wrap">
+          <img
+            src="/Users/subash-17785-test/.gemini/antigravity-ide/brain/3d7e13a7-d8a8-4788-aead-4804e3eddefa/premium_event_package_1779535758734.png"
+            alt="Premium Package" />
+          <div class="pkg-img-overlay"></div>
+        </div>
+        <ul class="pkg-features">
+          <li><span class="chk">✦</span> Elegant Traditional Stage Setup</li>
+          <li><span class="chk">✦</span> Professional LED Lighting</li>
+          <li><span class="chk">✦</span> 3,000+ Flower Decorations</li>
+          <li><span class="chk">✦</span> Banana Leaf Feast (200 guests)</li>
+          <li><span class="chk">✦</span> Recorded Nadaswaram Music</li>
+          <li><span class="chk">✦</span> Professional Photography + Video</li>
+          <li><span class="chk">✦</span> Makeup Artist Included</li>
+          <li><span class="chk">✦</span> Printed Invitation Cards</li>
+          <li><span class="chk">✦</span> Event Coordinator (Full Day)</li>
+          <li><span class="chk">✦</span> Return Gifts for 200 Guests</li>
+        </ul>
+        <button class="pkg-btn pkg-btn-premium" id="premiumBookBtn">Book Premium ✦</button>
+        <div class="pkg-glow premium-glow"></div>
+      </div>
+
+      <!-- Flexible -->
+      <div class="pkg-card pkg-budget reveal-card" data-delay="300">
+        <div class="pkg-ribbon budget-ribbon">Flexible</div>
+        <div class="pkg-header">
+          <div class="pkg-icon">🌟</div>
+          <h3 class="pkg-name">Flexible</h3>
+          <div class="pkg-tagline">Your Budget, Your Dream</div>
+          <div class="pkg-price">
+            <span class="price-from">Starting from</span>
+            <span class="price-amount">₹50,000</span>
+          </div>
+        </div>
+        <div class="pkg-img-wrap">
+          <img
+            src="/Users/subash-17785-test/.gemini/antigravity-ide/brain/3d7e13a7-d8a8-4788-aead-4804e3eddefa/budget_event_package_1779536073714.png"
+            alt="Flexible Package" />
+          <div class="pkg-img-overlay"></div>
+        </div>
+        <ul class="pkg-features">
+          <li><span class="chk">✦</span> Customisable Stage Decor</li>
+          <li><span class="chk">✦</span> Colourful Garland Decoration</li>
+          <li><span class="chk">✦</span> Traditional Brass Lamp Setup</li>
+          <li><span class="chk">✦</span> Banana Leaf Feast (50–100 guests)</li>
+          <li><span class="chk">✦</span> Basic Sound System</li>
+          <li><span class="chk">✦</span> Event Photography</li>
+          <li><span class="chk">✦</span> Digital Invitation Design</li>
+          <li><span class="chk">✦</span> Part-Day Event Coordinator</li>
+          <li><span class="chk">✦</span> Cultural Theme Consultation</li>
+          <li><span class="chk">✦</span> Flexible Add-on Options</li>
+        </ul>
+        <button class="pkg-btn pkg-btn-budget" id="budgetBookBtn">Build My Package ✦</button>
+        <div class="pkg-glow budget-glow"></div>
+      </div>
+
+    </div>
+
+    <!-- Package comparison note -->
+    <div class="pkg-note reveal-up">
+      <p>✦ All packages include GST, venue assistance, and complimentary planning consultation ✦</p>
+    </div>
+  </section>
+
+  <!-- ======================== TESTIMONIALS ======================== -->
+  <section class="testimonials-section">
+    <div class="section-header reveal-up">
+      <div class="section-tag">✦ Words of Joy ✦</div>
+      <h2 class="section-title">What Families <span class="gold">Say</span></h2>
+    </div>
+    <div class="testimonials-carousel" id="testimonialsCarousel">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Dream Day Planners made our daughter's wedding the grandest event we've ever seen.
+            Every detail was perfect — from the mandapam to the feast. We couldn't have asked for more!"</p>
+          <div class="testi-author">
+            <span class="testi-name">Kavitha Subramaniam</span>
+            <span class="testi-event">Wedding — Chennai</span>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The WhatWorksForU package was perfect for our budget but looked absolutely stunning.
+            The team was so professional and made everything stress-free. Highly recommended!"</p>
+          <div class="testi-author">
+            <span class="testi-name">Murugan Pillai</span>
+            <span class="testi-event">Birthday — Coimbatore</span>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"Our son's ear-piercing ceremony was so beautifully organised. The cultural
+            authenticity, the flowers, the music — everything transported us back to our roots. Pure magic!"</p>
+          <div class="testi-author">
+            <span class="testi-name">Priya Rajan</span>
+            <span class="testi-event">Ear Piercing — Madurai</span>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The Luxury package gave us a truly royal experience. The crystal chandeliers, 10,000
+            flowers, live Nadaswaram — our guests are still talking about it months later!"</p>
+          <div class="testi-author">
+            <span class="testi-name">Dr. Anand Krishnamurthy</span>
+            <span class="testi-event">Wedding — Trichy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-nav">
+      <button class="testi-btn" id="testPrev">&#8592;</button>
+      <button class="testi-btn" id="testNext">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- ======================== EXPERTS SHOWCASE ======================== -->
+  <section class="experts-section" id="experts">
+    <div class="section-header reveal-up">
+      <div class="section-tag">✦ Crafted By Masters ✦</div>
+      <h2 class="section-title">Our Specialized <span class="gold">Expertise</span></h2>
+      <p class="section-sub">Driven by decades of culinary, artistic, and multimedia excellence.</p>
+    </div>
+
+    <div class="experts-grid">
+      <!-- FOOD & CATERING -->
+      <div class="expert-card reveal-card" data-delay="0">
+        <div class="expert-card-inner">
+          <div class="expert-badge">Culinary Masters</div>
+          <div class="expert-icon">🍲</div>
+          <h3>Food &amp; Catering</h3>
+          <p class="expert-desc">We bring the authentic flavors of South India and global cuisines to your celebration,
+            crafting mouth-watering menus that guests talk about for years.</p>
+
+          <ul class="expert-highlights">
+            <li>✦ Traditional Banana Leaf Royal Feast</li>
+            <li>✦ Wood-pressed oils &amp; organic ingredients</li>
+            <li>✦ Awarded "Best Cultural Caterer 2024"</li>
+          </ul>
+        </div>
+        <div class="expert-glow"></div>
+      </div>
+
+      <!-- CAR & STAGE DECORATION -->
+      <div class="expert-card reveal-card" data-delay="100">
+        <div class="expert-card-inner">
+          <div class="expert-badge">Visual Artists</div>
+          <div class="expert-icon">🎭</div>
+          <h3>Stage &amp; Car Decor</h3>s
+          <p class="expert-desc">Turning venues into royal palaces. From grand temple-themed stage mandapams to elegant
+            fresh flower car decorations, we craft stunning settings.</p>
+
+          <ul class="expert-highlights">
+            <li>✦ Chettinad &amp; glassmorphic stage setups</li>
+            <li>✦ Imported orchids &amp; fresh jasmine designs</li>
+            <li>✦ Immersive ambient light integration</li>
+          </ul>
+        </div>
+        <div class="expert-glow"></div>
+      </div>
+
+      <!-- PHOTOGRAPHY, VIDEOGRAPHY & EDITING -->
+      <div class="expert-card reveal-card" data-delay="300">
+        <div class="expert-card-inner">
+          <div class="expert-badge">Media Storytellers</div>
+          <div class="expert-icon">📸</div>
+          <h3>Photo, Video &amp; Editing</h3>
+          <p class="expert-desc">Capturing emotion, tradition, and joy in cinematic details. Our crew uses top-tier 4K
+            cameras, drones, and professional studio-grade editing rigs.</p>
+
+          <ul class="expert-highlights">
+            <li>✦ Cinema-grade HDR photography &amp; teasers</li>
+            <li>✦ 4K aerial drone cinematics</li>
+            <li>✦ 48-Hour express teaser delivery</li>
+          </ul>
+        </div>
+        <div class="expert-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CONTACT ======================== -->
+  <section class="contact-section" id="contact">
+    <div class="section-header reveal-up">
+      <div class="section-tag">✦ Let's Create Magic ✦</div>
+      <h2 class="section-title">Get In <span class="gold">Touch</span></h2>
+      <p class="section-sub">Tell us your dream — we'll make it real.</p>
+    </div>
+    <div class="contact-container">
+      <div class="missed-call-card reveal-card">
+        <div class="missed-call-lamp">🪔</div>
+        <h3 class="missed-call-title">Book via Missed Call</h3>
+        <p class="missed-call-sub">No complex forms to fill! Simply give us a missed call or tap on either number below.
+          Our team will contact you within 24 hours to plan your dream celebration.</p>
+
+        <div class="missed-call-actions">
+          <a href="tel:+919025962650" class="missed-call-btn">
+            <span class="btn-icon">📞</span>
+            <div class="btn-text-wrap">
+              <span class="btn-label">Tap to Call / Missed Call</span>
+              <span class="btn-number">+91 90259 62650</span>
+            </div>
+          </a>
+          <a href="tel:+916382720967" class="missed-call-btn">
+            <span class="btn-icon">📞</span>
+            <div class="btn-text-wrap">
+              <span class="btn-label">Tap to Call / Missed Call</span>
+              <span class="btn-number">+91 63827 20967</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="missed-call-note">
+          <span class="note-star">✦</span> Give a missed call, we will contact you within 24 hours <span
+            class="note-star">✦</span>
+        </div>
+      </div>
+
+      <div class="contact-info reveal-card" data-delay="200">
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div>
+            <strong>Our Head Office</strong>
+            <p>Padmavadhipuram, Gandhinagar<br />Tirupur — 641 603</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📞</div>
+          <div>
+            <strong>Call Us</strong>
+            <p><a href="tel:+919025962650" style="color:inherit;text-decoration:none;">+91 90259 62650</a><br /><a
+                href="tel:+916382720967" style="color:inherit;text-decoration:none;">+91 63827 20967</a></p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">📧</div>
+          <div>
+            <strong>Email</strong>
+            <p>dreamdayplanners@gmail.com<br />tamileventsdreamdayplanners@gmail.com</p>
+          </div>
+        </div>
+        <!-- <div class="info-item">
+          <div class="info-icon">🕐</div>
+          <div>
+            <strong>Working Hours</strong>
+            <p>Mon – Sat: 9:00 AM – 7:00 PM<br />Sunday: 10:00 AM – 4:00 PM</p>
+          </div>
+        </div> -->
+        <div class="social-links">
+          <a href="https://www.facebook.com/search/top/?q=tamil%20wedding%20decorations" class="social-btn"
+            target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/explore/tags/tamilwedding/" class="social-btn" target="_blank"
+            rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/results?search_query=tamil+wedding+decoration" class="social-btn"
+            target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.524 3.545 12 3.545 12 3.545s-7.525 0-9.387.51a3.003 3.003 0 0 0-2.11 2.108C0 8.025 0 12 0 12s0 3.975.503 5.837a2.982 2.982 0 0 0 2.11 2.107c1.862.51 9.387.51 9.387.51s7.524 0 9.387-.51a2.982 2.982 0 0 0 2.11-2.107C24 15.975 24 12 24 12s0-3.975-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </a>
+          <a href="https://wa.me/919025962650" class="social-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.589 0 10.137-4.54 10.14-10.13.002-2.707-1.045-5.251-2.953-7.161C16.656 1.393 14.116.348 11.41.347 5.823.347 1.277 4.887 1.274 10.478c-.001 1.83.48 3.62 1.393 5.176l-.92 3.361 3.447-.905c1.47.8 2.934 1.244 4.853 1.244zM16.89 13.91c-.267-.134-1.58-.78-1.824-.869-.244-.09-.422-.134-.599.134-.178.268-.689.87-.845 1.048-.156.179-.312.2-.58.066-.268-.133-1.13-.417-2.153-1.332-.796-.71-1.333-1.587-1.49-1.854-.156-.268-.016-.412.117-.546.12-.12.268-.312.4-.469.135-.156.179-.268.268-.446.09-.178.045-.335-.022-.469-.067-.134-.6-.1.824-.958.21-.5-.367-.624-.445-.178-.044-.244-.09-.422.09-.178.58-.268.87-.268.87.58 0 .846-.223 1.025-.536 1.428l-.224 1.004c.156.09.31.2.42.33 1.13 1.34 1.76 2.37 2.02 2.65.26.27.38.3.65.17 1.07-.5 1.83-1.28 2.05-1.83.22-.55.22-1.03.11-1.12-.11-.09-.38-.22-.65-.36z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FOOTER ======================== -->
+  <footer class="footer">
+    <div class="footer-kolam">
+      <div class="kolam-pattern"></div>
+    </div>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="logo-lamp">🪔</span>
+        <span class="footer-logo">Dream Day <span class="gold">Planners</span></span>
+      </div>
+      <p class="footer-tagline">நம் கலாசாரம் — நம் பெருமை</p>
+      <p class="footer-tagline-en">Our Culture — Our Pride</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#packages">Packages</a>
+        <a href="#experts">Experts</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2026 Dream Day Planners. Crafted with 🪔 and ❤️ in Chennai, Tamil Nadu.</p>
+    </div>
+  </footer>
+
+  <!-- Booking Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-lamp">🪔</div>
+      <h3 class="modal-title">Let's Begin Your <span class="gold">Journey</span></h3>
+      <p class="modal-sub" id="modalSub">Ready to celebrate? Call us now and our team will assist you right away!</p>
+      <div class="modal-contact-numbers">
+        <a href="tel:+919025962650" class="modal-phone-btn">
+          <span class="modal-phone-icon">📞</span>
+          <span>+91 90259 62650</span>
+        </a>
+        <a href="tel:+916382720967" class="modal-phone-btn">
+          <span class="modal-phone-icon">📞</span>
+          <span>+91 63827 20967</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
